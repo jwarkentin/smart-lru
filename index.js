@@ -100,10 +100,12 @@ _.extend(SmartLRU.prototype, {
 
     if(cacheObj) {
       // Bump the timeout
-      clearTimeout(cacheObj.expire);
-      cacheObj.expire = setTimeout(function() {
-        that.del(key);
-      }, cacheObj.ttl);
+      if(cacheObj.ttl) {
+        clearTimeout(cacheObj.expire);
+        cacheObj.expire = setTimeout(function() {
+          that.del(key);
+        }, cacheObj.ttl);
+      }
 
       // Push to end of "queue" (object fur realz) - we don't want recently used data getting deleted when cache size exceeds limit
       delete this.cache[key];

@@ -1,0 +1,21 @@
+{
+  "author": "Justin Warkentin",
+  "license": "MIT",
+  "name": "smart-lru",
+  "version": "0.0.0",
+  "description": "Simple, fast, smart and flexible Least Recently Used (LRU) cache",
+  "keywords": [
+    "lru",
+    "cache"
+  ],
+  "main": "index.js",
+  "homepage": "https://github.com/jwarkentin/smart-lru",
+  "bugs": "https://github.com/jwarkentin/smart-lru/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwarkentin/smart-lru.git"
+  },
+  "dependencies": {
+    "lodash": "^2.4.x"
+  }
+}

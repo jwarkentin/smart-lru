@@ -1,0 +1,4 @@
+# TODO
+
+* Measure actual object sizes so we can store native objects. Functions would have to be banned probably because I don't know how we can measure the size of a function. We also need to measure storage space of keys, not just values. They are just stored as strings in the JS engine generally though, so we can probably measure them as such. The library [here](http://code.stephenmorley.org/javascript/finding-the-memory-usage-of-objects/) may be of use.
+  * Implement `optimizeMemory` option which, if enabled, will optimize memory usage at the cost of extra CPU time. It will have to determine when to store values, such as numbers, as strings and when to store them as their native type. Sometimes a number in a string is smaller. For example, the number `5` is 8 bytes, but the string is just 1 byte.

@@ -2,7 +2,7 @@
   "author": "Justin Warkentin",
   "license": "MIT",
   "name": "smart-lru",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple, fast, smart and flexible Least Recently Used (LRU) cache",
   "keywords": [
     "lru",

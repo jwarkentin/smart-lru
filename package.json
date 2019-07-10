@@ -19,7 +19,7 @@
     "url": "https://github.com/jwarkentin/smart-lru.git"
   },
   "dependencies": {
-    "lodash": "3.x"
+    "lodash": "4.17.12"
   },
   "devDependencies": {
     "jasmine": "2.x"
